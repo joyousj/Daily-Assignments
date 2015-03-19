@@ -1,0 +1,83 @@
+//Print words that equals to the int value
+//if..else conditions 
+import java.util.Scanner;
+
+
+public class IfElsePrintNumberInWord implements NumAndWord {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter in a number: ");
+		int num;
+		num = in.nextInt();
+		IfElsePrintNumberInWord pniw = new IfElsePrintNumberInWord();
+		String number = pniw.convertNum(num);
+		pniw.printNum(number);
+		in.close();
+			}
+
+	@Override
+	public String convertNum(int num) {
+		String word = "";
+		
+		if (num == 1 ) {
+			word = "One";
+			//System.out.println("One");
+			
+			} 
+		else if (num == 2) {
+			word = "Two";
+			//System.out.println("Two");
+		
+		}
+		else if (num == 3) {
+			word = "Three";
+			//System.out.println("Three");
+			
+		}
+		else if ( num == 4) {
+			word = "Four";
+			//System.out.println("Four");
+			
+		}
+		else if (num == 5) {
+			word = "Five";
+			//System.out.println("Five");
+		
+		}
+		else if (num == 6) {
+			word = "Six";
+			//System.out.println("Six");
+		
+		}
+		else if (num == 7) {
+			word = "Seven";
+			//System.out.println("Seven");
+			
+		}
+		else if (num == 8) {
+			word = "Eight";
+			//System.out.println("Eight");
+		
+		}
+		else if (num == 9) {
+			word = "Nine";
+			//System.out.println("Nine");
+		
+		}
+		else {
+			word = "Please enter numbers between 1-9!";
+			//System.out.println("Other");
+			
+		}
+		return word;
+
+	}
+
+	@Override
+	public void printNum(String num) {
+		System.out.println(num);
+		
+	}
+}
